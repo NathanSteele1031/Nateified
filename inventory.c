@@ -15,3 +15,10 @@ void clearInventory(Item* givenInventory, int inventoryLength){
         clearItemName(&givenInventory[index]);
     }
 }
+
+int itemEmpty(Item givenItem){
+    if (givenItem.name[0] = '\0'){
+        return 1;
+    }
+    return 0;
+}
