@@ -13,6 +13,19 @@ void inventoryMenu(Item* givenInventory, int inventoryLength){
 int main() {
     Item inventory[10];
     clearInventory(inventory, 10);
+    char tempInput = '0';
+
+    while (1){
+        inventoryMenu(&inventory[0], 10);
+        scanf("%c", &tempInput);
+        if (tempInput == 'q'){
+            break;
+        }
+        if (tempInput != '\n'){
+            scanf("%c", &tempInput);
+        }
+        tempInput = '0';
+    }
 
     return 0;
 }
