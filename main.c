@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "inventory.h"
+#include "wilderness.h"
 
 void inventoryMenu(Item* givenInventory, int inventoryLength){
     printf("INVENTORY\n");
@@ -15,6 +16,7 @@ void wildernessMenu() {
 }
 
 int main() {
+    srand(time(NULL));
     Item inventory[10];
     clearInventory(inventory, 10);
     char tempInput = '0';
