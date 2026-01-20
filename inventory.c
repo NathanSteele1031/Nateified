@@ -1,7 +1,4 @@
-typedef struct {
-    char name[20];
-    int amount;
-} Item;
+#include "inventory.h"
 
 void clearItem(Item* givenItem){
     for (int index=0; index<20; index++){
