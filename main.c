@@ -10,6 +10,10 @@ void inventoryMenu(Item* givenInventory, int inventoryLength){
     }
 }
 
+void wildernessMenu() {
+    printf("WILDERNESS\n");
+}
+
 int main() {
     Item inventory[10];
     clearInventory(inventory, 10);
