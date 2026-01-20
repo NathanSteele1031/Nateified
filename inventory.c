@@ -29,3 +29,15 @@ int addItem(Item* givenInventory, int inventoryLength, Item givenItem){
     }
     return 1; // Inventory Full
 }
+
+Item makeItem(char* givenName, int givenAmount){
+    Item createdItem;
+    for (int index=0;index<20;index++){
+        if (givenName[index] == '\0'){
+            break;
+        }
+        createdItem.name[index] = givenName[index];
+    }
+    createdItem.amount = givenAmount;
+    return createdItem;
+}
