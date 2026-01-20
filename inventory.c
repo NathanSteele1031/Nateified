@@ -1,5 +1,6 @@
 typedef struct {
     char name[20];
+    int amount;
 } Item;
 
 void clearItemName(Item* givenItem){
