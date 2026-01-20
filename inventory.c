@@ -20,6 +20,15 @@ int itemEmpty(Item givenItem){
     return 0;
 }
 
+void setItemName(Item* givenItem, char* givenName, int nameLength){
+    for (int index=0;index<20;index++){
+        if (index>=nameLength){
+            return;
+        }
+        givenItem->name[index] = givenName[index];
+    }
+}
+
 int addItem(Item* givenInventory, int inventoryLength, Item givenItem){
     for (int index=0;index<inventoryLength;index++){
         if (itemEmpty(givenInventory[index])){
