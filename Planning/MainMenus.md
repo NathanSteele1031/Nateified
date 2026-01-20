@@ -2,6 +2,10 @@
 ## Inventory
 This will be where you can craft some basic materials and see what you have.
 
+### Code Components
+- Variable to store item data (Arrary)
+- Struct for items data
+
 ## Wilderness
 This will be where you can find and get materials
 
