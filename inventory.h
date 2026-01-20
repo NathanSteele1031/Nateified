@@ -9,6 +9,6 @@ typedef struct {
 void clearItem(Item* givenItem);
 void clearInventory(Item* givenInventory, int inventoryLength);
 int itemEmpty(Item GivenITem);
-int addItem(Item* givenInventory, Item givenItem);
+int addItem(Item* givenInventory, int inventoryLength, Item givenItem);
 
 #endif

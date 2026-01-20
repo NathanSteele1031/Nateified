@@ -19,3 +19,13 @@ int itemEmpty(Item givenItem){
     }
     return 0;
 }
+
+int addItem(Item* givenInventory, int inventoryLength, Item givenItem){
+    for (int index=0;index<inventoryLength;index++){
+        if (itemEmpty(givenInventory[index])){
+            givenInventory[index] = givenItem;
+            return 0;
+        }
+    }
+    return 1; // Inventory Full
+}
