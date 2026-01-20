@@ -12,12 +12,12 @@ void clearItem(Item* givenItem){
 
 void clearInventory(Item* givenInventory, int inventoryLength){
     for (int index=0; index<inventoryLength; index++){
-        clearItemName(&givenInventory[index]);
+        clearItem(&givenInventory[index]);
     }
 }
 
 int itemEmpty(Item givenItem){
-    if (givenItem.name[0] = '\0'){
+    if (givenItem.name[0] == '\0'){
         return 1;
     }
     return 0;
