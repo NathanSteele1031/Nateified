@@ -21,6 +21,9 @@ Biomes can affect the outcomes of what you will get when scavanging in the wilde
 - Rock (Different Kinds)
 - Ore (Different Kinds)
 
+### Scavanging (Function)
+You will get an arrary of items. When reciving the arrary the first element is for information, not to be counted as an element. The first element's amount variable is the amount of items that are collected in the arrary. The name is INFO for clearity.
+
 ## Claimed Land
 This is where you claimed some land from any dangers and can build machines here.
 
